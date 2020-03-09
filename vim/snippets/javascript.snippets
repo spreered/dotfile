@@ -1,0 +1,30 @@
+snippet log
+	console.log(${1});
+
+snippet scaffold Stimulus
+	import { Controller } from "stimulus" 
+
+	export default class extends Controller { 
+	  static targets = [ "target" ] 
+
+	  initialize() { 
+
+	  }
+
+	  connect() { 
+
+	  }
+	}
+	
+
+snippet scaffold Vue
+	let vm = new Vue({
+	  el: '#app', 
+	  data: {
+	    message: 'Hello, CCH'
+	  }
+	})
+	
+snippet strict
+	"use strict";
+
