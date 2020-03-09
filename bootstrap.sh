@@ -3,9 +3,9 @@
 
 echo "installing dotfile..."
 
-ln -s ~/.dotfile/vim ~/.vim 
-ln -s ~/.vim/vimrc ~/.vimrc
-ln -s ~/.dotfile/zshrc ~/.zshrc
-ln -s ~/.dotfile/zsh ~/.zsh
-ln -s ~/.dotfile/zshenv ~/.zshenv
-ln -s ~/.dotfile/Brewfile ~/Brewfile
+ln -s `pwd`/vim $HOME/.vim 
+ln -s `pwd`/vimrc $HOME/.vimrc
+ln -s `pwd`/zshrc ~/.zshrc
+ln -s `pwd`/zsh ~/.zsh
+ln -s `pwd`/zshenv ~/.zshenv
+ln -s `pwd`/Brewfile ~/Brewfile
