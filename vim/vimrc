@@ -26,6 +26,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'vim-ruby/vim-ruby'
   Plug 'tpope/vim-rails'
   Plug 'thoughtbot/vim-rspec'
+  Plug 'elixir-editors/vim-elixir'
 
   " for vue.js development
   Plug 'leafOfTree/vim-vue-plugin'
