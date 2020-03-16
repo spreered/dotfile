@@ -3,7 +3,7 @@ let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v[\/]\.(git|hg|svn)$|tmp$|node_modules$',
   \ 'file': '\v\.(exe|so|dll)$',
   \ }
-
+let g:ctrlp_cache_dir = $HOME . '/.cache/ctrlp'
 " for faster search(using Silver Searcher)
 if executable('ag')
   set grepprg=ag\ --nogroup\ --nocolor
