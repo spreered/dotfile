@@ -11,6 +11,8 @@ call plug#begin('~/.vim/plugged')
   Plug 'tpope/vim-repeat'
   Plug 'terryma/vim-multiple-cursors'
   Plug 'morhetz/gruvbox'
+  Plug 'ryanoasis/vim-devicons'
+  Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 
   " for general purpose development
   Plug 'tomtom/tcomment_vim'
@@ -21,6 +23,11 @@ call plug#begin('~/.vim/plugged')
   Plug 'majutsushi/tagbar'
   Plug 'mileszs/ack.vim'
   Plug 'airblade/vim-gitgutter'
+  Plug 'jiangmiao/auto-pairs'
+  Plug 'Yggdroot/indentLine'
+  " git tool
+  Plug 'Xuyuanp/nerdtree-git-plugin'
+  Plug 'tpope/vim-fugitive' " Git version control
 
   " for ruby/rails development
   Plug 'vim-ruby/vim-ruby'
