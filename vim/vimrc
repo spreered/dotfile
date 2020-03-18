@@ -28,6 +28,7 @@ call plug#begin('~/.vim/plugged')
   " git tool
   Plug 'Xuyuanp/nerdtree-git-plugin'
   Plug 'tpope/vim-fugitive' " Git version control
+  Plug 'zivyangll/git-blame.vim'
 
   " for ruby/rails development
   Plug 'vim-ruby/vim-ruby'
