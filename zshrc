@@ -1,11 +1,10 @@
 # zplug
 source /usr/local/opt/zplug/init.zsh
-zplug 'mafredri/zsh-async'
-zplug 'sindresorhus/pure'
-zplug 'zsh-users/zsh-syntax-highlighting'
-zplug 'zsh-users/zsh-history-substring-search'
-zplug 'zsh-users/zsh-completions'
+zplug 'mafredri/zsh-async', from:github
+zplug 'sindresorhus/pure', use:pure.zsh, from:github, as:theme
 zplug 'zsh-users/zsh-autosuggestions'
+zplug 'zsh-users/zsh-syntax-highlighting', defer:2
+zplug 'zsh-users/zsh-history-substring-search'
 if ! zplug check --verbose; then
    printf "Install? [y/N]: "
    if read -q; then
@@ -14,7 +13,7 @@ if ! zplug check --verbose; then
        echo
    fi
 fi
-zplug load
+zplug load 
 
 for zsh_source in $HOME/.zsh/configs/*.zsh; do
   source $zsh_source
@@ -24,26 +23,25 @@ done
 PURE_PROMPT_SYMBOL="🐵 ❯"
 PURE_PROMPT_VICMD_SYMBOL="🙈 ❮"
 
-# autosugesstion
-
-if zplug check zsh-users/zsh-autosuggestions; then
- ZSH_AUTOSUGGEST_CLEAR_WIDGETS+=(history-substring-search-up history-substring-search-down)
- ZSH_AUTOSUGGEST_CLEAR_WIDGETS=("${(@)ZSH_AUTOSUGGEST_CLEAR_WIDGETS:#(up|down)-line-or-history}")
-fi
-
-
-KEYTIMEOUT=1
-bindkey -v
-
-# history substring
-if zplug check zsh-users/zsh-history-substring-search; then
-  bindkey '^[[A' history-substring-search-up
-  bindkey '^[[B' history-substring-search-down
-fi
-
 # autojump
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh || echo "Failed to load the >> autojump <<"
 ## ensure_tmux_is_running
+
+# vi mode
+bindkey -v
+KEYTIMEOUT=1
+
+if zplug check zsh-users/zsh-history-substring-search; then
+  bindkey '^[[A' history-substring-search-up
+  bindkey '^[[B' history-substring-search-down
+  bindkey -M vicmd 'k' history-substring-search-up
+  bindkey -M vicmd 'j' history-substring-search-down
+fi
+
+# make color constants available, enable colored output from ls
+autoload -U colors
+colors
+export CLICOLOR=1
 
 # . /usr/local/etc/bash_completion.d
 
@@ -55,7 +53,6 @@ eval "$(rbenv init -)"
 
 # asdf
 . /usr/local/opt/asdf/asdf.sh
-
 
 # alias
 alias ll="ls -lGa"
