@@ -12,7 +12,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'terryma/vim-multiple-cursors'
   Plug 'morhetz/gruvbox'
   Plug 'ryanoasis/vim-devicons'
-  Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+  " Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 
   " for general purpose development
   Plug 'tomtom/tcomment_vim'

@@ -4,6 +4,7 @@ let g:ctrlp_custom_ignore = {
   \ 'file': '\v\.(exe|so|dll)$',
   \ }
 let g:ctrlp_cache_dir = $HOME . '/.cache/ctrlp'
+let g:ctrlp_max_files=0
 " for faster search(using Silver Searcher)
 if executable('ag')
   set grepprg=ag\ --nogroup\ --nocolor

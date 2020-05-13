@@ -54,5 +54,6 @@ eval "$(rbenv init -)"
 # asdf
 . /usr/local/opt/asdf/asdf.sh
 
+export EDITOR=/usr/local/bin/vim 
 # alias
 alias ll="ls -lGa"
