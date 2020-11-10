@@ -9,3 +9,4 @@ ln -s `pwd`/zshrc ~/.zshrc
 ln -s `pwd`/zsh ~/.zsh
 ln -s `pwd`/zshenv ~/.zshenv
 ln -s `pwd`/Brewfile ~/Brewfile
+ln -s `pwd`/tmux ~/.tmux.conf
