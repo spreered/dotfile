@@ -1,6 +1,8 @@
 set-option -g prefix C-a
 bind-key C-a send-prefix
 
+set -g mouse on
+
 # navigate windows
 unbind-key l
 bind-key h select-window -t :-

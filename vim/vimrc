@@ -13,6 +13,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'morhetz/gruvbox'
   Plug 'ryanoasis/vim-devicons'
   " Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+  Plug 'jeffkreeftmeijer/vim-numbertoggle' 
 
   " for general purpose development
   Plug 'tomtom/tcomment_vim'
