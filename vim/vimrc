@@ -39,6 +39,8 @@ call plug#begin('~/.vim/plugged')
 
   " for vue.js development
   Plug 'leafOfTree/vim-vue-plugin'
+  Plug 'pangloss/vim-javascript', {'for': ['js', 'jsx', 'tsx']}
+  Plug 'maxmellon/vim-jsx-pretty', {'for': ['js', 'jsx', 'tsx']}"
 call plug#end()
 
 "--------------
