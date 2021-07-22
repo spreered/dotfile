@@ -57,3 +57,7 @@ eval "$(rbenv init -)"
 export EDITOR=/usr/local/bin/vim 
 # alias
 alias ll="ls -lGa"
+
+if [ -f ~/my_alias ]; then
+  source ~/my_alias
+fi

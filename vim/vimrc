@@ -30,6 +30,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'Xuyuanp/nerdtree-git-plugin'
   Plug 'tpope/vim-fugitive' " Git version control
   Plug 'zivyangll/git-blame.vim'
+  Plug 'tpope/vim-rhubarb'
 
   " for ruby/rails development
   Plug 'vim-ruby/vim-ruby'
