@@ -38,6 +38,9 @@ call plug#begin('~/.vim/plugged')
   Plug 'thoughtbot/vim-rspec'
   Plug 'elixir-editors/vim-elixir'
 
+  " for go development
+  Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+
   " for vue.js development
   Plug 'leafOfTree/vim-vue-plugin'
   Plug 'pangloss/vim-javascript', {'for': ['js', 'jsx', 'tsx']}

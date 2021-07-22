@@ -54,6 +54,9 @@ eval "$(rbenv init -)"
 # asdf
 . /usr/local/opt/asdf/asdf.sh
 
+# gopath
+export GOPATH=$HOME/go
+
 export EDITOR=/usr/local/bin/vim 
 # alias
 alias ll="ls -lGa"
