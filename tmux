@@ -130,3 +130,9 @@ set-window-option -g window-status-bell-style fg=colour235,bg=colour160 #base02,
 #
 # # bell
 # set-window-option -g window-status-bell-style fg=white,bg=red #base2, red
+
+bind-key -r M-h swap-window -t :- \; select-window -t :-
+bind-key -r M-j swap-pane -D
+bind-key -r M-k swap-pane -U
+bind-key -r M-l swap-window -t :+ \; select-window -t :+
+
