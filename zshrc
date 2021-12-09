@@ -56,6 +56,11 @@ eval "$(rbenv init -)"
 
 # gopath
 export GOPATH=$HOME/go
+export GO111MODULE=auto
+export PATH=$PATH:$GOPATH/bin
+
+# elixir iex history
+export ERL_AFLAGS="-kernel shell_history enabled"
 
 export EDITOR=/usr/local/bin/vim 
 # alias
