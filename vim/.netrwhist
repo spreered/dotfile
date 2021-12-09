@@ -1,0 +1,3 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =1
+let g:netrw_dirhist_1='/Users/spreered/Documents/self_project/sandbox/elixir_playground/hangman/lib/hangman'

@@ -14,6 +14,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'ryanoasis/vim-devicons'
   " Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
   Plug 'jeffkreeftmeijer/vim-numbertoggle' 
+  Plug 'pbrisbin/vim-mkdir'
 
   " for general purpose development
   Plug 'tomtom/tcomment_vim'
@@ -26,6 +27,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'airblade/vim-gitgutter'
   Plug 'jiangmiao/auto-pairs'
   Plug 'Yggdroot/indentLine'
+  Plug 'neoclide/coc.nvim', {'branch': 'release'}
   " git tool
   Plug 'Xuyuanp/nerdtree-git-plugin'
   Plug 'tpope/vim-fugitive' " Git version control
@@ -71,5 +73,5 @@ scriptencoding utf-8
 "--------------
 " key mapping
 "--------------
-let mapleader = ","
+let mapleader="," 
 
