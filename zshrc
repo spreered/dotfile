@@ -67,6 +67,7 @@ export EDITOR=/usr/local/bin/vim
 alias ll="ls -lGa"
 alias e="nvim"
 
+# test sign
 # gpg tty setup 
 export GPG_TTY=$(tty)
 
