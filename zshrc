@@ -65,6 +65,7 @@ export ERL_AFLAGS="-kernel shell_history enabled"
 export EDITOR=/usr/local/bin/vim 
 # alias
 alias ll="ls -lGa"
+alias e="nvim"
 
 if [ -f ~/my_alias ]; then
   source ~/my_alias

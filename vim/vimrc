@@ -73,5 +73,6 @@ scriptencoding utf-8
 "--------------
 " key mapping
 "--------------
-let mapleader="," 
+let mapleader=" " 
 
+autocmd BufWritePre *.rb :%s/\s\+$//e
