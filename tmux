@@ -15,10 +15,10 @@ bind-key -n C-l select-window -t :+
 # navigate panes
 bind-key j select-pane -t :.-
 bind-key C-j select-pane -t :.-
-bind-key -n C-j select-pane -t :.-
+# bind-key -n C-j select-pane -t :.-
 bind-key k select-pane -t :.+
 bind-key C-k select-pane -t :.+
-bind-key -n C-k select-pane -t :.+
+# bind-key -n C-k select-pane -t :.+
 # tell tmux to use 256 colour terminal
 set -g default-terminal "xterm-256color"
 
@@ -42,6 +42,16 @@ bind-key p paste-buffer
 # bind-key -n C-p paste-buffer
 # bind-key C-p paste-buffer
 
+unbind r
+bind r source-file ~/.tmux.conf
+
+bind -r m resize-pane -Z
+#
+# bind -r j resize-pane -D 5
+# bind -r k resize-pane -U 5
+# bind -r l resize-pane -R 5
+# bind -r h resize-pane -L 5
+#
 #### COLOUR (Solarized dark)
 #
 # # default statusbar colors

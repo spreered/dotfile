@@ -51,9 +51,6 @@ export CLICOLOR=1
 # rbenv
 eval "$(rbenv init -)"
 
-# asdf
-. /usr/local/opt/asdf/asdf.sh
-
 # gopath
 export GOPATH=$HOME/go
 export GO111MODULE=auto
@@ -74,3 +71,18 @@ export GPG_TTY=$(tty)
 if [ -f ~/my_alias ]; then
   source ~/my_alias
 fi
+
+if [ -f ~/export_token ]; then
+  source ~/export_token
+fi
+export PATH="/usr/local/opt/php@7.4/bin:$PATH"
+export PATH="/usr/local/opt/php@7.4/sbin:$PATH"
+# export PATH="/usr/local/opt/postgresql@13/bin:$PATH"
+export PATH="/usr/local/opt/postgresql@15/bin:$PATH"
+export LDFLAGS="-L/usr/local/opt/postgresql@15/lib"
+export CPPFLAGS="-I/usr/local/opt/postgresql@15/include"
+export PKG_CONFIG_PATH="/usr/local/opt/postgresql@15/lib/pkgconfig"
+
+export HOMEBREW_NO_AUTO_UPDATE=1
+
+. /usr/local/opt/asdf/libexec/asdf.sh
