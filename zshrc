@@ -43,18 +43,8 @@ autoload -U colors
 colors
 export CLICOLOR=1
 
-# . /usr/local/etc/bash_completion.d
-
-# [ -f ~/.client-config.zsh ] && source ~/.client-config.zsh
-# [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-# rbenv
-eval "$(rbenv init -)"
-
-# gopath
-export GOPATH=$HOME/go
-export GO111MODULE=auto
-export PATH=$PATH:$GOPATH/bin
+# Python pipx
+export PATH=$PATH:$HOME/.local/bin
 
 # elixir iex history
 export ERL_AFLAGS="-kernel shell_history enabled"
@@ -75,9 +65,6 @@ fi
 if [ -f ~/export_token ]; then
   source ~/export_token
 fi
-export PATH="/usr/local/opt/php@7.4/bin:$PATH"
-export PATH="/usr/local/opt/php@7.4/sbin:$PATH"
-# export PATH="/usr/local/opt/postgresql@13/bin:$PATH"
 export PATH="/usr/local/opt/postgresql@15/bin:$PATH"
 export LDFLAGS="-L/usr/local/opt/postgresql@15/lib"
 export CPPFLAGS="-I/usr/local/opt/postgresql@15/include"
